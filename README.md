@@ -1,2 +1,2 @@
-modul-7
-BEM. SASS.
+modul-8
+Adaptive layout. Adaptive graphics. Mobile first.
