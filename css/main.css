@@ -69,9 +69,23 @@ address {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -222,18 +236,32 @@ address {
 }
 
 .benefits {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding: 94px 0;
+  }
 }
 
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: var(--portfolio-gap);
 }
 
-.benefits__item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
 }
 
 .benefits__icon-box {
@@ -257,6 +285,11 @@ address {
   line-height: 1.1428571429;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__text {

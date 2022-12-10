@@ -1,14 +1,25 @@
 .benefits {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width:1200px) {
+    padding: 94px 0;
+  }
 }
 
 .benefits__list {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--portfolio-gap);
 }
 
 .benefits__item {
-  width: 270px;
+  @media screen and (min-width:768px){
+    width: 354px;
+  }
+
+  @media screen and (min-width:1200px){
+    width: 270px;
+  }
 }
 
 .benefits__icon-box {
@@ -26,6 +37,11 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width:767px){
+  text-align: center;
+}
+
 }
 
 .benefits__text {
