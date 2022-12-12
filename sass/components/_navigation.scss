@@ -2,6 +2,14 @@
   display: none;
   margin-left: 93px;
 
+  @media screen and (min-width:768px) {
+    display: block;
+    margin-left: 87px;
+  }
+
+  @media screen and (min-width:1200px){
+    margin-left: 93px;
+  }
 
 &__list {
   display: flex;
