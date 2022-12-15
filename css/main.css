@@ -280,7 +280,6 @@ address {
   }
 }
 .hero__title {
-  width: 360px;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -288,6 +287,11 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-text-hero);
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -575,6 +579,9 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: var(--portfolio-gap);
 }
 .clients__link {
@@ -881,7 +888,7 @@ address {
   color: var(--color-text-hero);
 }
 .form__field {
-  width: 450px;
+  width: 100%;
   padding: 14px 15px;
   font-weight: 400;
   font-size: 16px;
@@ -890,6 +897,11 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
+}
+@media screen and (min-width: 480px) {
+  .form__field {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form__field {
@@ -962,8 +974,6 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 609px;
   padding: 40px 39px 40px 41px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -976,6 +986,15 @@ address {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1292,6 +1311,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .header-phone-socials__item:not(:first-child) {

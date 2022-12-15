@@ -104,6 +104,8 @@
 
 .header-phone-socials {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .header-phone-socials__item:not(:first-child) {
