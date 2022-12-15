@@ -613,7 +613,12 @@ address {
 }
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 .portfolio__list {
   display: -webkit-box;
@@ -622,10 +627,27 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  margin-bottom: 40px;
 }
-.portfolio__item + .portfolio__item {
-  margin-left: 8px;
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    row-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-bottom: 50px;
+  }
 }
 .portfolio__btn {
   padding: 6px 22px;
@@ -661,10 +683,21 @@ address {
   margin-left: calc(-1 * var(--portfolio-gap));
 }
 .project__item {
+  --item: 1;
   -ms-flex-preferred-size: calc(100% / var(--item) - var(--portfolio-gap));
       flex-basis: calc(100% / var(--item) - var(--portfolio-gap));
   margin-top: var(--portfolio-gap);
   margin-left: var(--portfolio-gap);
+}
+@media screen and (min-width: 768px) {
+  .project__item {
+    --item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    --item: 3;
+  }
 }
 .project__link {
   display: block;

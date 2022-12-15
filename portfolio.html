@@ -36,7 +36,7 @@
           </li>
         </ul>
       </nav>
-  
+
       <ul class="header-contact list">
         <li class="header-contact__item">
           <a href="mailto:info@devstudio.com" class="link header-contact__link">
@@ -55,6 +55,12 @@
           </a>
         </li>
       </ul>
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="phone-menu" width="40" height="40">
+          <use href="./image/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -83,7 +89,22 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp1.jpg" alt="leptop" width="370" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="..\image\portfolio\img_l@1x.jpg 1x, 
+                  ..\image\portfolio\img_l@2x.jpg 2x"
+                />
+                <source media="(min-width: 768px)" 
+                  srcset="..\image\portfolio\img_m@1x.jpg 1x, 
+                  ..\image\portfolio\img_m@2x.jpg 2x" 
+                />
+                <source media="(max-width: 767px)" 
+                  srcset="..\image\portfolio\img_s@1x.jpg 1x, 
+                  ..\image\portfolio\img_s@2x.jpg 2x" 
+                />
+                <img src="./image/portfolio/img_s@1x.jpg" alt="leptop" width="450"  loading="lazy"/>
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -96,7 +117,18 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp2.jpg" alt="basketball" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                ..\image\portfolio\img_l@1x-1.jpg 1x, 
+                ..\image\portfolio\img_l@2x-1.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="
+                ..\image\portfolio\img_m@1x-1.jpg 1x, 
+                ..\image\portfolio\img_m@2x-1.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="
+                ..\image\portfolio\img_s@1x-1.jpg 1x, 
+                ..\image\portfolio\img_s@2x-1.jpg 2x" />
+                <img src="./image/portfolio/img_s@1x-1.jpg" alt="basketboll" width="450" loading="lazy" />
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -109,7 +141,18 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp3.jpg" alt="restourant-name" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                ..\image\portfolio\img_l@1x-2.jpg 1x, 
+                ..\image\portfolio\img_l@2x-2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="
+                ..\image\portfolio\img_m@1x-2.jpg 1x, 
+                ..\image\portfolio\img_m@2x-2.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="
+                ..\image\portfolio\img_s@1x-2.jpg 1x, 
+                ..\image\portfolio\img_s@2x-2.jpg 2x" />
+                <img src="./image/portfolio/img_s@1x-2.jpg" alt="seafood" width="450" loading="lazy" />
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -122,7 +165,18 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp4.jpg" alt="headphones" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                ..\image\portfolio\img_l@1x-3.jpg 1x, 
+                ..\image\portfolio\img_l@2x-3.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="
+                ..\image\portfolio\img_m@1x-3.jpg 1x, 
+                ..\image\portfolio\img_m@2x-3.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="
+                ..\image\portfolio\img_s@1x-3.jpg 1x, 
+                ..\image\portfolio\img_s@2x-3.jpg 2x" />
+                <img src="./image/portfolio/img_s@1x-3.jpg" alt="headphones" width="450" loading="lazy" />
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -135,7 +189,22 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp5.jpg" alt="box" width="370" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="..\image\portfolio\img_l@1x-4.jpg 1x, 
+                  ..\image\portfolio\img_l@2x-4.jpg 2x"
+                />
+                <source media="(min-width: 768px)" 
+                  srcset="..\image\portfolio\img_m@1x-4.jpg 1x, 
+                  ..\image\portfolio\img_m@2x-4.jpg 2x" 
+                />
+                <source media="(max-width: 767px)" 
+                  srcset="..\image\portfolio\img_s@1x-4.jpg 1x, 
+                  ..\image\portfolio\img_s@2x-4.jpg 2x" 
+                />
+                <img src="./image/portfolio/img_s@1x-4.jpg" alt="box" width="450"  loading="lazy"/>
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -148,7 +217,18 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp6.jpg" alt="monitor" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                ..\image\portfolio\img_l@1x-5.jpg 1x, 
+                ..\image\portfolio\img_l@2x-5.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="
+                ..\image\portfolio\img_m@1x-5.jpg 1x, 
+                ..\image\portfolio\img_m@2x-5.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="
+                ..\image\portfolio\img_s@1x-5.jpg 1x, 
+                ..\image\portfolio\img_s@2x-5.jpg 2x" />
+                <img src="./image/portfolio/img_s@1x-5.jpg" alt="monitor" width="450" loading="lazy" />
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -161,7 +241,18 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp7.jpg" alt="open book" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                ..\image\portfolio\img_l@1x-6.jpg 1x, 
+                ..\image\portfolio\img_l@2x-6.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="
+                ..\image\portfolio\img_m@1x-6.jpg 1x, 
+                ..\image\portfolio\img_m@2x-6.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="
+                ..\image\portfolio\img_s@1x-6.jpg 1x, 
+                ..\image\portfolio\img_s@2x-6.jpg 2x" />
+                <img src="./image/portfolio/img_s@1x-6.jpg" alt="open book" width="450" loading="lazy" />
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -174,7 +265,18 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp8.jpg" alt="lable" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                ..\image\portfolio\img_l@1x-7.jpg 1x, 
+                ..\image\portfolio\img_l@2x-7.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="
+                ..\image\portfolio\img_m@1x-7.jpg 1x, 
+                ..\image\portfolio\img_m@2x-7.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="
+                ..\image\portfolio\img_s@1x-7.jpg 1x, 
+                ..\image\portfolio\img_s@2x-7.jpg 2x" />
+                <img src="./image/portfolio/img_s@1x-7.jpg" alt="label" width="450" loading="lazy" />
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -187,7 +289,18 @@
         <li class="project__item">
           <a href="#" class="project__link link">
             <div class="project__overlay">
-              <img src="./image/imgp9.jpg" alt="leptop work" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                ..\image\portfolio\img_l@1x-8.jpg 1x, 
+                ..\image\portfolio\img_l@2x-8.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="
+                ..\image\portfolio\img_m@1x-8.jpg 1x, 
+                ..\image\portfolio\img_m@2x-8.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="
+                ..\image\portfolio\img_s@1x-8.jpg 1x, 
+                ..\image\portfolio\img_s@2x-8.jpg 2x" />
+                <img src="./image/portfolio/img_s@1x-8.jpg" alt="leptop work" width="450" loading="lazy" />
+              </picture>
               <p class="project__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -265,6 +378,40 @@
       </form>
     </div>
   </footer>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="phone-icon-close" width="40" height="40">
+        <use href="./image/icons.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu list">
+      <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link">Студія</a></li>
+      <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link link current-phone">Портфоліо</a></li>
+      <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link link">Контакти</a></li>
+    </ul>
+    <ul class="header-phone-contact list">
+      <li class="header-phone-contact__item">
+        <a href="tel:+380961111111" class="link header-phone-contact__link">+38 096 111 11 11</a>
+      </li>
+      <li class="header-phone-contact__item">
+        <a href="mailto:info@devstudio.com" class="link header-phone-mail__link">info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="header-phone-socials list">
+      <li class="header-phone-socials__item"><a href="#" class="header-phone-socials__link link">Instagram</a></li>
+      <li class="header-phone-socials__item"><a href="#" class="header-phone-socials__link link">Twitter</a></li>
+      <li class="header-phone-socials__item"><a href="#" class="header-phone-socials__link link">Facebook</a></li>
+      <li class="header-phone-socials__item"><a href="#" class="header-phone-socials__link link">LinkedIn</a></li>
+    </ul>
+  </div>
+  
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+    </script>
+  <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
